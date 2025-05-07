@@ -25,7 +25,7 @@ app.post('/api/mysql', async (req, res) => {
         switch (tipo) {
             case 'cadastro':
                 var [rows, fields] = await pool.query(
-                    "insert into `railway`.`tbl_catdastro` (`nome`, `login`, `senha`) values (?, ?, ?);",
+                    "insert into `railway`.`tbl_cadastro` (`nome`, `login`, `senha`) values (?, ?, ?);",
                     [nome, login, senha]
                 );
                 if (rows.affectedRows > 0) {
