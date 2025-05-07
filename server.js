@@ -11,10 +11,10 @@ app.use(express.json());
 app.use(express.static('.'));
 
 const pool = mysql.createPool({
-    host: 'crossover.proxy.rlwy.net',
-    port: '31519',
+    host: 'caboose.proxy.rlwy.net',
+    port: '32331',
     user: 'root',
-    password: 'SKSFVVRJtGkHjoOZWzbtPTkGQAaakxpq',
+    password: 'LtocAYaKOChXQnlMkOBHDMpKSwhJvlmF',
     database: 'railway'
 });
 
